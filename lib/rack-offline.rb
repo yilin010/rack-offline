@@ -28,7 +28,7 @@ module Rails
         if Rails.version >= "3.1" && Rails.configuration.assets.enabled
           files = Dir[
             "#{root}/**/*.html",
-            "#{root}/assets/**/*.{js,css,jpg,png,gif}"]
+            "#{root}/app/assets/**/*.{js,css,jpg,png,gif}"]
         else
           files = Dir[
             "#{root}/**/*.html",
